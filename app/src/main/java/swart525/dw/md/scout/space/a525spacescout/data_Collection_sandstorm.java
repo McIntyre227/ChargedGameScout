@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.RadioButton;
 
 public class data_Collection_sandstorm extends AppCompatActivity {
 
@@ -13,7 +14,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
     public static String AutoAchivedMobility = "False";
     public static String AutoDocked = "False";
     public static String AutoEngaged = "False";
-    public static String AutoAttemptedEngaged = "False";
+    public static String AutoAttempted = "False";
 
 
     @Override
@@ -22,9 +23,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         setContentView(R.layout.activity_data__collection_sandstorm);
 
         final CheckBox AutoAchivedMobilityCB = (CheckBox) findViewById(R.id.Auto_AchievedMobility_CB);
-        final CheckBox AutoDockedCB = (CheckBox) findViewById(R.id.Auto_Docked_CB);
-        final CheckBox AutoEngagedCB = (CheckBox) findViewById(R.id.Auto_Engaged_CB);
-        final CheckBox AutoAttemptedEngagedCB = (CheckBox) findViewById(R.id.Auto_AttemptedEngaged_CB);
+
+        final RadioButton AutoDockedRB = (RadioButton) findViewById(R.id.Auto_Docked_RB);
+        final RadioButton AutoEngagedRB = (RadioButton) findViewById(R.id.Auto_Engaged_RB);
+        final RadioButton AutoAttemptedRB = (RadioButton) findViewById(R.id.Auto_Attempted_RB);
 
         //Defines and implements Button to continue along with variable savings
         Button To_Teleop = (Button) findViewById(R.id.To_Teleop);
@@ -36,14 +38,14 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 if (AutoAchivedMobilityCB.isChecked()) {
                    AutoAchivedMobility = "True";
                 }
-                if (AutoDockedCB.isChecked()) {
+                if (AutoDockedRB.isChecked()) {
                     AutoDocked = "True";
                 }
-                if (AutoEngagedCB.isChecked()) {
+                if (AutoEngagedRB.isChecked()) {
                     AutoEngaged = "True";
                 }
-                if (AutoAttemptedEngagedCB.isChecked()) {
-                    AutoAttemptedEngaged = "True";
+                if (AutoAttemptedRB.isChecked()) {
+                    AutoAttempted = "True";
                 }
 
                 Intent startintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);

@@ -12,16 +12,15 @@
 
     <CheckBox
         android:id="@+id/Auto_AchievedMobility_CB"
-        android:layout_width="481dp"
-        android:layout_height="51dp"
-        android:text="Achieved Mobility? "
-        android:textSize="40sp"
+        android:layout_width="333dp"
+        android:layout_height="52dp"
+        android:text="Mobility"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.304"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.148" />
+        app:layout_constraintVertical_bias="0.164" />
 
     <TextView
         android:id="@+id/Autonomous_TV"
@@ -39,16 +38,17 @@
 
     <Button
         android:id="@+id/To_Teleop"
-        android:layout_width="524dp"
-        android:layout_height="103dp"
+        android:layout_width="399dp"
+        android:layout_height="67dp"
         android:fontFamily="@font/bolt_regular"
         android:text="To Tele Op"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <android.support.constraint.Barrier
         android:id="@+id/barrier"
@@ -62,56 +62,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <CheckBox
-        android:id="@+id/Auto_Engaged_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Engaged?"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.699" />
-
-    <CheckBox
-        android:id="@+id/Auto_Docked_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Docked?"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.132"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654" />
-
-    <CheckBox
-        android:id="@+id/Auto_AttemptedEngaged_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Attempted Engaged?"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.743" />
-
     <Button
         android:id="@+id/button"
-        android:layout_width="793dp"
-        android:layout_height="488dp"
+        android:layout_width="365dp"
+        android:layout_height="98dp"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.344" />
+        app:layout_constraintVertical_bias="0.319" />
+
+    <RadioGroup
+        android:layout_width="310dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789">
+
+        <RadioButton
+            android:id="@+id/Auto_Docked_RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Docked"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/Auto_Engaged_RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Engaged"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/Auto_Attempted_RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attempted"
+            android:textSize="30sp" />
+
+    </RadioGroup>
 
 
 </android.support.constraint.ConstraintLayout>

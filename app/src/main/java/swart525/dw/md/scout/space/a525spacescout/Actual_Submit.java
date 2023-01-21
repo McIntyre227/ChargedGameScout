@@ -28,7 +28,7 @@ public class Actual_Submit extends AppCompatActivity {
     //Compiles string for CSV file
     public String Final_String = Data_Collection_Page_1.Team_Num + "," +
             Data_Collection_Page_1.Match_Num + "," +
-            data_Collection_sandstorm.AutoAttemptedEngaged + "," +
+            data_Collection_sandstorm.AutoAttempted + "," +
             data_Collection_sandstorm.AutoAchivedMobility + "," +
             data_Collection_sandstorm.AutoDocked + "," +
             data_Collection_sandstorm.AutoEngaged + "," +

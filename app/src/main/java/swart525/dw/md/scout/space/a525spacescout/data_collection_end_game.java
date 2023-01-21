@@ -29,7 +29,6 @@ public class data_collection_end_game extends AppCompatActivity {
         setContentView(R.layout.activity_data_collection_end_game);
 
         //Defines Page Elements
-        final RadioButton HangTraversalRB = (RadioButton) findViewById(R.id.HangTraversal_RB);
         final RadioButton HangHighRB = (RadioButton) findViewById(R.id.HangHigh_RB);
         final RadioButton HangMidRB = (RadioButton) findViewById(R.id.HangMid_RB);
         final RadioButton HangLowRB = (RadioButton) findViewById(R.id.HangLow_RB);
@@ -49,9 +48,6 @@ public class data_collection_end_game extends AppCompatActivity {
 
                 //Ending position variables
                 //Because these are radio buttons, they may need to be changed to isChecked
-                if (HangTraversalRB.isChecked()) {
-                    HangTraversal = "True";
-                }
                 if (HangHighRB.isChecked()) {
                     HangHigh = "True";
                 }
