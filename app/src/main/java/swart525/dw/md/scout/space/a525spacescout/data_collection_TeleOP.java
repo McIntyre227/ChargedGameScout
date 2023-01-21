@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.RadioButton;
 
 
 //After the first competition, we decided to only count the inner and outer
@@ -26,10 +27,9 @@ public class data_collection_TeleOP extends AppCompatActivity {
     public static String TeleFouls = "False";
     public static String TeleRobotStalled = "False";
     public static String TeleDocked = "False";
-    public static String TeleAttemptedDock = "False";
     public static String TeleEngaged = "False";
     public static String TelePark = "False";
-
+    public static String TeleAttempted = "False";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,14 +40,15 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final CheckBox TeleTippedCB = (CheckBox) findViewById(R.id.Tele_Tipped_CB);
         final CheckBox TeleFoulsCB = (CheckBox) findViewById(R.id.Tele_Fouls_CB);
         final CheckBox TeleRobotStallCB = (CheckBox) findViewById(R.id.Tele_RobotStall_CB);
-        final CheckBox TeleDockedCB = (CheckBox) findViewById(R.id.Tele_Docked_CB);
-        final CheckBox TeleAttemptedDockCB = (CheckBox) findViewById(R.id.Tele_AttemptedDock_CB);
-        final CheckBox TeleEngagedCB = (CheckBox) findViewById(R.id.Tele_Engaged_CB);
-        final CheckBox TeleParkCB = (CheckBox) findViewById(R.id.Tele_Park_CB);
 
         //Below defines the button and commands for saving data and switching pages
         Button To_EndGame = (Button) findViewById(R.id.To_Endgame_B);
         To_EndGame.setOnClickListener(new View.OnClickListener()
+
+        final RadioButton TeleDockedRB = (RadioButton) findViewById(R.id.Tele_Docked_RB);
+        final RadioButton TeleEngagedRB = (RadioButton) findViewById(R.id.Tele_Engaged_RB);
+        final RadioButton TeleAttemptedRB = (RadioButton) findViewById(R.id.Tele_Attempted_RB);
+
         { //Makes onclick listener for button
             @Override
            public void onClick(View v) {
@@ -67,27 +68,19 @@ public class data_collection_TeleOP extends AppCompatActivity {
                 if (TeleRobotStallCB.isChecked()) {
                     TeleRobotStalled = "True";
                 }
-
-                if (TeleDockedCB.isChecked()) {
+                if (TeleDockedRB.isChecked())
                     TeleDocked = "True";
                 }
-
-                if (TeleAttemptedDockCB.isChecked()) {
-                    TeleAttemptedDock = "True";
-                }
-
-                if (TeleEngagedCB.isChecked()) {
+                if (TeleEngagedRB.isChecked()) {
                     TeleEngaged = "True";
                 }
-
-                if (TeleParkCB.isChecked()) {
-                    TelePark = "True";
-                }
-
+                if (TeleAttemptedRB.isChecked() {
+            TeleAttempted = "True";
+        }
                     Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
                     startActivity(startintent);
                 }
 
-        });
+        };
     }
 }

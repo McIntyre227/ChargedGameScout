@@ -32,7 +32,6 @@ public class Actual_Submit extends AppCompatActivity {
             data_Collection_sandstorm.AutoAchivedMobility + "," +
             data_Collection_sandstorm.AutoDocked + "," +
             data_Collection_sandstorm.AutoEngaged + "," +
-            data_collection_TeleOP.TeleAttemptedDock + "," +
             data_collection_TeleOP.TeleDefense + "," +
             data_collection_TeleOP.TeleDocked + "," +
             data_collection_TeleOP.TeleEngaged + "," +

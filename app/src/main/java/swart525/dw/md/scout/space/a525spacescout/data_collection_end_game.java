@@ -35,7 +35,7 @@ public class data_collection_end_game extends AppCompatActivity {
         final RadioButton NohangRB = (RadioButton) findViewById(R.id.Nohang_RB);
 
         final CheckBox AttemptedHangCB = (CheckBox) findViewById(R.id.AttemptedHang_CB);
-        final CheckBox NoAttemptCB = (CheckBox) findViewById(R.id.NoAttempt_CB);
+
         final CheckBox FellOffRungCB = (CheckBox) findViewById(R.id.FellOffRung_CB);
 
 
@@ -59,15 +59,6 @@ public class data_collection_end_game extends AppCompatActivity {
                 }
                 if (AttemptedHangCB.isChecked()) {
                     AttemptedHang = "True";
-                }
-                if (NoAttemptCB.isChecked())  {
-                    NoAttempt = "True";
-                }
-                if (FellOffRungCB.isChecked()) {
-                    FellOffRung = "True";
-                }
-                if (NohangRB.isChecked()) {
-                    NoHang = "True";
                 }
 
                 Intent startintent = new Intent(getApplicationContext(), Save_Page.class);
