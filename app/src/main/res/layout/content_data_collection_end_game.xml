@@ -17,36 +17,36 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintVertical_bias="0.303" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bolt_regular"
-        android:text="End Game and Extra"
+        android:text="End Game and other"
         android:textColor="#000"
-        android:textSize="40sp"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.014" />
+        app:layout_constraintVertical_bias="0.005" />
 
     <RadioGroup
         android:id="@+id/radioGroup2"
-        android:layout_width="397dp"
-        android:layout_height="508dp"
+        android:layout_width="446dp"
+        android:layout_height="623dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412">
+        app:layout_constraintVertical_bias="0.595">
 
         <RadioButton
             android:id="@+id/HangHigh_RB"
@@ -90,6 +90,13 @@
             android:text="Attempted to Hang"
             android:textSize="35sp" />
 
+        <CheckBox
+            android:id="@+id/AttemptedHang_CB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attempted Hang"
+            android:textSize="40sp" />
+
     </RadioGroup>
 
     <TextView
@@ -102,31 +109,22 @@
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17" />
+        app:layout_constraintVertical_bias="0.132" />
 
     <Button
         android:id="@+id/To_Submisions_B"
-        android:layout_width="438dp"
-        android:layout_height="117dp"
+        android:layout_width="525dp"
+        android:layout_height="125dp"
         android:text="To Submition"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <CheckBox
-        android:id="@+id/AttemptedHang_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Attempted Hang"
-        android:textSize="40sp"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="39dp" />
+        app:layout_constraintVertical_bias="0.931" />
 
 </android.support.constraint.ConstraintLayout>

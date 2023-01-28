@@ -28,7 +28,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
     public static String TeleRobotStalled = "False";
     public static String TeleDocked = "False";
     public static String TeleEngaged = "False";
-    public static String TelePark = "False";
+    public static String TeleParked = "False";
     public static String TeleAttempted = "False";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,14 +40,16 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final CheckBox TeleTippedCB = (CheckBox) findViewById(R.id.Tele_Tipped_CB);
         final CheckBox TeleFoulsCB = (CheckBox) findViewById(R.id.Tele_Fouls_CB);
         final CheckBox TeleRobotStallCB = (CheckBox) findViewById(R.id.Tele_RobotStall_CB);
+        final RadioButton TeleDockedRB = (RadioButton) findViewById(R.id.Tele_Docked_RB);
+        final RadioButton TeleEngagedRB = (RadioButton) findViewById(R.id.Tele_Engaged_RB);
+        final RadioButton TeleAttemptedRB = (RadioButton) findViewById(R.id.Tele_Attempted_RB);
+        final RadioButton TeleParkedRB = (RadioButton) findViewById(R.id.Tele_Parked_RB);
+
+
 
         //Below defines the button and commands for saving data and switching pages
         Button To_EndGame = (Button) findViewById(R.id.To_Endgame_B);
         To_EndGame.setOnClickListener(new View.OnClickListener()
-
-        final RadioButton TeleDockedRB = (RadioButton) findViewById(R.id.Tele_Docked_RB);
-        final RadioButton TeleEngagedRB = (RadioButton) findViewById(R.id.Tele_Engaged_RB);
-        final RadioButton TeleAttemptedRB = (RadioButton) findViewById(R.id.Tele_Attempted_RB);
 
         { //Makes onclick listener for button
             @Override
@@ -68,19 +70,25 @@ public class data_collection_TeleOP extends AppCompatActivity {
                 if (TeleRobotStallCB.isChecked()) {
                     TeleRobotStalled = "True";
                 }
-                if (TeleDockedRB.isChecked())
+
+                if (TeleDockedRB.isChecked()) {
                     TeleDocked = "True";
                 }
                 if (TeleEngagedRB.isChecked()) {
                     TeleEngaged = "True";
                 }
-                if (TeleAttemptedRB.isChecked() {
-            TeleAttempted = "True";
-        }
+                if (TeleAttemptedRB.isChecked()) {
+                    TeleAttempted = "True";
+                }
+                if (TeleParkedRB.isChecked()){
+                    TeleParked = "True";
+                }
                     Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
                     startActivity(startintent);
                 }
 
-        };
+
+        });
+
     }
 }

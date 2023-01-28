@@ -9,55 +9,368 @@
     tools:context=".data_collection_TeleOP"
     tools:showIn="@layout/activity_data_collection__tele_op">
 
-    <CheckBox
-        android:id="@+id/Tele_Defense_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Defense"
-        android:textSize="30sp"
+    <Button
+        android:id="@+id/Tele_CoopTopLeft_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="-80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.73" />
+        app:layout_constraintVertical_bias="0.147" />
 
-    <CheckBox
-        android:id="@+id/Tele_Fouls_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fouls"
-        android:textSize="30sp"
+    <Button
+        android:id="@+id/Tele_CoopTopRight_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.776" />
+        app:layout_constraintVertical_bias="0.147" />
 
-    <CheckBox
-        android:id="@+id/Tele_RobotStall_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Robot Stalled"
-        android:textSize="30sp"
+    <Button
+        android:id="@+id/Tele_CoopBottomRight_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="80dp"
+        android:translationY="220dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_LeftMiddleCenter_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationY="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/Tele_RightBottomRight_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="160dp"
+        android:translationY="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_RightTopRight_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_CoopBottomLeft_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="-80dp"
+        android:translationY="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_RightMiddleRight_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="160dp"
+        android:translationY="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_RightBottomLeft_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationY="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_LeftTopLeft_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="-80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/Tele_LeftMiddleRight_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="80dp"
+        android:translationY="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/Tele_CoopMiddleRight_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="80dp"
+        android:translationY="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_RightTopCenter_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_RightMiddleCenter_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="80dp"
+        android:translationY="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_CoopMiddleCenter_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationY="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_LeftBottomLeft_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="-80dp"
+        android:translationY="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/Tele_RightMiddleLeft_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationY="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_LeftBottomCenter_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationY="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/Tele_LeftTopCenter_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/Tele_LeftTopRight_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/Tele_CoopMiddleLeft_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="-80dp"
+        android:translationY="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_RightBottomCenter_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="80dp"
+        android:translationY="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_LeftMiddleLeft_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="-80dp"
+        android:translationY="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/Tele_RightTopLeft_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_CoopBottomCenter_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationY="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/Tele_LeftBottomRight_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        android:translationX="80dp"
+        android:translationY="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/Tele_CoopTopCenter_B"
+        android:layout_width="81dp"
+        android:layout_height="116dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
 
     <Button
         android:id="@+id/To_Endgame_B"
-        android:layout_width="380dp"
-        android:layout_height="100dp"
+        android:layout_width="525dp"
+        android:layout_height="125dp"
         android:fontFamily="@font/bolt_regular"
         android:text="To End Game"
         android:textSize="40sp"
+        android:translationY="-75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
@@ -70,20 +383,20 @@
         android:gravity="center"
         android:text="Tele Op"
         android:textColor="#000"
-        android:textSize="50sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.048" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="301dp" />
+        app:layout_constraintGuide_end="400dp" />
 
     <android.support.constraint.Barrier
         android:id="@+id/barrier2"
@@ -104,13 +417,52 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Robot Tipped"
-        android:textSize="30sp"
+        android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintHorizontal_bias="0.912"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
+        app:layout_constraintVertical_bias="0.72" />
+
+    <CheckBox
+        android:id="@+id/Tele_RobotStall_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Robot Stalled"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <CheckBox
+        android:id="@+id/Tele_Fouls_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fouls"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <CheckBox
+        android:id="@+id/Tele_Defense_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Defense"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
 
     <android.support.constraint.Barrier
         android:layout_width="wrap_content"
@@ -126,42 +478,42 @@
 
     <RadioGroup
         android:id="@+id/radioGroup3"
-        android:layout_width="392dp"
-        android:layout_height="228dp"
+        android:layout_width="306dp"
+        android:layout_height="260dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.204"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.156">
+        app:layout_constraintVertical_bias="0.741">
 
         <RadioButton
             android:id="@+id/Tele_Docked_RB"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
+            android:layout_width="193dp"
+            android:layout_height="60dp"
             android:text="Docked"
-            android:textSize="30sp" />
+            android:textSize="45sp" />
 
         <RadioButton
             android:id="@+id/Tele_Engaged_RB"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_width="237dp"
+            android:layout_height="77dp"
             android:text="Engaged"
-            android:textSize="30sp" />
+            android:textSize="45sp" />
 
         <RadioButton
             android:id="@+id/Tele_Attempted_RB"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_width="252dp"
+            android:layout_height="64dp"
             android:text="Attempted"
-            android:textSize="30sp" />
+            android:textSize="45sp" />
 
         <RadioButton
             android:id="@+id/Tele_Parked_RB"
-            android:layout_width="match_parent"
-            android:layout_height="47dp"
+            android:layout_width="192dp"
+            android:layout_height="67dp"
             android:text="Parked"
-            android:textSize="30sp" />
+            android:textSize="45sp" />
     </RadioGroup>
 
 </android.support.constraint.ConstraintLayout>

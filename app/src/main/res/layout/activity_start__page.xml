@@ -21,20 +21,20 @@
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintHorizontal_bias="0.271"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.356" />
 
     <Button
         android:id="@+id/Start_Collection_Open_B"
-        android:layout_width="437dp"
-        android:layout_height="110dp"
+        android:layout_width="525dp"
+        android:layout_height="125dp"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="123dp"
         android:fontFamily="@font/bolt_regular"
         android:text="Start Collection"
-        android:textSize="30sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/textView26"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"

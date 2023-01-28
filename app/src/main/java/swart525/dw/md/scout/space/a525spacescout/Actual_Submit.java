@@ -36,11 +36,9 @@ public class Actual_Submit extends AppCompatActivity {
             data_collection_TeleOP.TeleDocked + "," +
             data_collection_TeleOP.TeleEngaged + "," +
             data_collection_TeleOP.TeleFouls + "," +
-            data_collection_TeleOP.TelePark + "," +
+            data_collection_TeleOP.TeleParked + "," +
             data_collection_TeleOP.TeleRobotStalled + "," +
             data_collection_TeleOP.TeleTipped + "," +
-
-            data_collection_end_game.FellOffRung + "," +
 
             Save_Page.comment + "," +
             Data_Collection_Page_1.Initials;

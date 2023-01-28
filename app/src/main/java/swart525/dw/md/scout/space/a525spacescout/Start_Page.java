@@ -19,18 +19,7 @@ public class Start_Page extends AppCompatActivity {
         Start_Collection_Open.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
             @Override
             public void onClick(View v) {
-                Data_Collection_Page_1.Red1 = "False";
-                Data_Collection_Page_1.Red2 = "False";
-                Data_Collection_Page_1.Red3 = "False";
-                Data_Collection_Page_1.Red4 = "False";
-                Data_Collection_Page_1.Red5 = "False";
-                Data_Collection_Page_1.Red6 = "False";
-                Data_Collection_Page_1.Blue1 = "False";
-                Data_Collection_Page_1.Blue2 = "False";
-                Data_Collection_Page_1.Blue3 = "False";
-                Data_Collection_Page_1.Blue4 = "False";
-                Data_Collection_Page_1.Blue5 = "False";
-                Data_Collection_Page_1.Blue6 = "False";
+
                 data_collection_end_game.HangTraversal = "False";
                 data_collection_end_game.HangHigh = "False";
                 data_collection_end_game.HangMid = "False";
