@@ -79,8 +79,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\cfrobotics\Downloads\rapid_react_logo.jpg" />
-                                                <entry key="scalingPercent" value="81" />
+                                                <entry key="imagePath" value="C:\Users\cfrobotics\Desktop\Scouting Programs\Charged Up Scouting\ChargedGameScout\app\src\main\res\drawable\charged_up_logo.jpg" />
+                                                <entry key="scalingPercent" value="110" />
                                               </map>
                                             </option>
                                           </PersistentState>

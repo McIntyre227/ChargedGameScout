@@ -48,16 +48,14 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
 
         //Below defines the button and commands for saving data and switching pages
-        Button To_EndGame = (Button) findViewById(R.id.To_Endgame_B);
-        To_EndGame.setOnClickListener(new View.OnClickListener()
-
-        { //Makes onclick listener for button
+        Button To_Submission = (Button) findViewById(R.id.To_Submision_B);
+        To_Submission.setOnClickListener(new View.OnClickListener() { //Makes onclick listener for button
             @Override
            public void onClick(View v) {
 
-               if (TeleTippedCB.isChecked()) {
-                   TeleTipped = "True";
-               }
+                if (TeleTippedCB.isChecked()) {
+                    TeleTipped = "True";
+                }
 
                 if (TeleDefenseCB.isChecked()) {
                     TeleDefense = "True";
@@ -80,14 +78,13 @@ public class data_collection_TeleOP extends AppCompatActivity {
                 if (TeleAttemptedRB.isChecked()) {
                     TeleAttempted = "True";
                 }
-                if (TeleParkedRB.isChecked()){
+                if (TeleParkedRB.isChecked()) {
                     TeleParked = "True";
                 }
-                    Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
-                    startActivity(startintent);
-                }
 
-
+                Intent startintent = new Intent(getApplicationContext(), Save_Page.class);
+                startActivity(startintent);
+            }
         });
 
     }

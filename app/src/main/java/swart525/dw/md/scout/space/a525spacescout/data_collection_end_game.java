@@ -44,8 +44,6 @@ public class data_collection_end_game extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
-
                 //Ending position variables
                 //Because these are radio buttons, they may need to be changed to isChecked
                 if (HangHighRB.isChecked()) {
