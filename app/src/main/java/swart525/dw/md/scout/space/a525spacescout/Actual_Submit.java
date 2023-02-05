@@ -32,13 +32,45 @@ public class Actual_Submit extends AppCompatActivity {
             data_Collection_sandstorm.AutoAchivedMobility + "," +
             data_Collection_sandstorm.AutoDocked + "," +
             data_Collection_sandstorm.AutoEngaged + "," +
+            //Left Grid
+            data_Collection_sandstorm.AutoLeftTopLeft + "," +
+            data_Collection_sandstorm.AutoLeftMiddleLeft + "," +
+            data_Collection_sandstorm.AutoLeftBottomLeft + "," +
+            data_Collection_sandstorm.AutoLeftTopCenter + "," +
+            data_Collection_sandstorm.AutoLeftMiddleCenter + "," +
+            data_Collection_sandstorm.AutoLeftBottomCenter + "," +
+            data_Collection_sandstorm.AutoLeftTopRight + "," +
+            data_Collection_sandstorm.AutoLeftMiddleRight + "," +
+            data_Collection_sandstorm.AutoLeftBottomRight + "," +
+            //Coop Grid
+            data_Collection_sandstorm.AutoCoopTopLeft + "," +
+            data_Collection_sandstorm.AutoCoopMiddleLeft + "," +
+            data_Collection_sandstorm.AutoCoopBottomLeft + "," +
+            data_Collection_sandstorm.AutoCoopTopCenter + "," +
+            data_Collection_sandstorm.AutoCoopMiddleCenter + "," +
+            data_Collection_sandstorm.AutoCoopBottomCenter + "," +
+            data_Collection_sandstorm.AutoCoopTopRight + "," +
+            data_Collection_sandstorm.AutoCoopMiddleRight + "," +
+            data_Collection_sandstorm.AutoCoopBottomRight + "," +
+            //Right Grid
+            data_Collection_sandstorm.AutoRightTopLeft + "," +
+            data_Collection_sandstorm.AutoRightMiddleLeft + "," +
+            data_Collection_sandstorm.AutoRightBottomLeft + "," +
+            data_Collection_sandstorm.AutoRightTopCenter + "," +
+            data_Collection_sandstorm.AutoRightMiddleCenter + "," +
+            data_Collection_sandstorm.AutoRightBottomCenter + "," +
+            data_Collection_sandstorm.AutoRightTopRight + "," +
+            data_Collection_sandstorm.AutoRightMiddleRight + "," +
+            data_Collection_sandstorm.AutoRightBottomRight + "," +
+
             data_collection_TeleOP.TeleDefense + "," +
-            data_collection_TeleOP.TeleDocked + "," +
-            data_collection_TeleOP.TeleEngaged + "," +
             data_collection_TeleOP.TeleFouls + "," +
             data_collection_TeleOP.TeleParked + "," +
-            data_collection_TeleOP.TeleRobotStalled + "," +
+            data_collection_TeleOP.TeleDocked + "," +
+            data_collection_TeleOP.TeleEngaged + "," +
+            data_collection_TeleOP.TeleAttempted + "," +
             data_collection_TeleOP.TeleTipped + "," +
+            data_collection_TeleOP.TeleRobotStalled + "," +
 
             Save_Page.comment + "," +
             Data_Collection_Page_1.Initials;
