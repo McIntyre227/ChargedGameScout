@@ -28,6 +28,7 @@ public class Start_Page extends AppCompatActivity {
                 data_collection_end_game.AttemptedHang = "False";
                 data_collection_end_game.NoAttempt = "False";
                 data_collection_end_game.FellOffRung = "False";
+                //data_Collection_sandstorm.AutoLeftBottomLeft = "Grey";
 
                 Intent startintent = new Intent(getApplicationContext(), Data_Collection_Page_1.class);
                 startActivity(startintent);

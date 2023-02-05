@@ -18,9 +18,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
     public static String AutoLeftTopLeft = "False";
     public static String AutoLeftTopCenter = "False";
     public static String AutoLeftTopRight = "False";
-    public static String AutoLeftMiddleLeft = "False";
+    public static String AutoLeftMiddleLeft = "Grey";
     public static String AutoLeftMiddleRight = "False";
-    public static String AutoLeftBottomLeft = "False";
+    public static String AutoLeftBottomLeft = "Grey";
+    public static String AutoLeftBottomCenter = "Grey";
     /*public static String AutoLeftTopLeft = "False";
     public static String AutoLeftTopLeft = "False";
     public static String AutoLeftTopLeft = "False";
@@ -55,10 +56,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         //Defines all Buttons_B);
         final Button AutoLeftTopLeftB = (Button) findViewById(R.id.Tele_LeftTopLeft_B);
         final Button AutoLeftMiddleLeftB = (Button) findViewById(R.id.Tele_LeftMiddleLeft_B);
-        final Button AutoLeftBottomLeftB = (Button) findViewById(R.id.Tele_LeftBottomLeft_B);
+        final Button AutoLeftBottomLeftB = (Button) findViewById(R.id.Auto_LeftBottomLeft_B);
         final Button AutoLeftTopCenterB = (Button) findViewById(R.id.Tele_LeftTopCenter_B);
         final Button AutoLeftMiddleCenterB = (Button) findViewById(R.id.Tele_LeftMiddleCenter_B);
-        final Button AutoLeftBottomCenterB = (Button) findViewById(R.id.Tele_LeftBottomCenter_B);
+        final Button AutoLeftBottomCenterB = (Button) findViewById(R.id.Auto_LeftBottomCenter_B);
         final Button AutoLeftTopRightB = (Button) findViewById(R.id.Tele_LeftTopRight_B);
         final Button AutoLeftMiddleRightB = (Button) findViewById(R.id.Tele_LeftMiddleRight_B);
         final Button AutoLeftBottomRightB = (Button) findViewById(R.id.Tele_LeftBottomRight_B);
@@ -82,10 +83,11 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         final Button AutoRightBottomRightB = (Button) findViewById(R.id.Tele_RightBottomRight_B);
 
 
-        //Defines and implements Button to continue along with variable savings
+        //Defines and implements Button to continue to next page in the app.
+        //The following only are checked when the button is pressed to go to the next page.
         Button To_Teleop = (Button) findViewById(R.id.To_Teleop);
         To_Teleop.setOnClickListener(new View.OnClickListener()
-        { //Makes onclick listener for button
+        { //only do the following when the To Teleop button is pressed.
             @Override
             public void onClick(View v) {
 
@@ -106,21 +108,47 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 startActivity(startintent);
             }
         });
-        /*AutoLeftTopLeftB.setOnClickListener(new View.OnClickListener());
-        {
+
+        //The following code will fill out the grid when a button is pressed.
+        //yellow for cones, purple for cubes, grey for no game element placed
+
+        AutoLeftBottomLeftB.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void on(View v) {
-            if(AutoLeftTopLeft) {
-                AutoLeftTopLeftB.setBackgroundResource(R.color.colorYellow;
-
+            public void onClick(View view) {
+                if (AutoLeftBottomLeft == "Grey") {
+                    AutoLeftBottomLeftB.setBackgroundResource(R.color.colorYellow);
+                    AutoLeftBottomLeft = "Yellow";
+                }
+                else if (AutoLeftBottomLeft == "Yellow") {
+                    AutoLeftBottomLeftB.setBackgroundResource(R.color.colorPurple);
+                    AutoLeftBottomLeft = "Purple";
+                }
+                else { // (AutoLeftBottomLeft == "Purple") {
+                    AutoLeftBottomLeftB.setBackgroundResource(R.color.colorGrey);
+                    AutoLeftBottomLeft = "Grey";
+                }
             }
-            if(AutoLeftMiddleLeft) {
-                AutoLeftMiddleLeftB.setBackgroundResource(R.color.colorYellow)
-            }
+        });
 
-        }
-        }
-*/
+        AutoLeftBottomCenterB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (AutoLeftBottomCenter == "Grey") {
+                    AutoLeftBottomCenterB.setBackgroundResource(R.color.colorYellow);
+                    AutoLeftBottomCenter = "Yellow";
+                }
+                else if (AutoLeftBottomCenter == "Yellow") {
+                    AutoLeftBottomCenterB.setBackgroundResource(R.color.colorPurple);
+                    AutoLeftBottomCenter = "Purple";
+                }
+                else { // (AutoLeftBottomLeft == "Purple") {
+                    AutoLeftBottomCenterB.setBackgroundResource(R.color.colorGrey);
+                    AutoLeftBottomCenter = "Grey";
+                }
+            }
+        });
+
+
     }
 
 }
