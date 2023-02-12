@@ -11,7 +11,7 @@ import android.widget.RadioButton;
 public class data_Collection_sandstorm extends AppCompatActivity {
 
     //Defines variables for use
-    public static String AutoAchivedMobility = "False";
+    public static String AutoAchievedMobility = "False";
     public static String AutoDocked = "False";
     public static String AutoEngaged = "False";
     public static String AutoAttempted = "False";
@@ -52,7 +52,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data__collection_sandstorm);
         //Defines all CheckBox_CB
-        final CheckBox AutoAchivedMobilityCB = (CheckBox) findViewById(R.id.Auto_AchievedMobility_CB);
+        final CheckBox AutoAchievedMobilityCB = (CheckBox) findViewById(R.id.Auto_AchievedMobility_CB);
         //Defines all RadioButtons_RB
         final RadioButton AutoDockedRB = (RadioButton) findViewById(R.id.Auto_Docked_RB);
         final RadioButton AutoEngagedRB = (RadioButton) findViewById(R.id.Auto_Engaged_RB);
@@ -98,8 +98,8 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (AutoAchivedMobilityCB.isChecked()) {
-                   AutoAchivedMobility = "True";
+                if (AutoAchievedMobilityCB.isChecked()) {
+                   AutoAchievedMobility = "True";
                 }
                 if (AutoDockedRB.isChecked()) {
                     AutoDocked = "True";
@@ -121,6 +121,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
 
         //This is the code for either cone or cube spots
+        //*******************  HYBRID NODES  ****************************************
         //Left Grid
         AutoLeftBottomLeftB.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -133,7 +134,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                     AutoLeftBottomLeftB.setBackgroundResource(R.color.colorPurple);
                     AutoLeftBottomLeft = "Purple";
                 }
-                else { // (AutoLeftBottomLeft == "Purple") {
+                else {
                     AutoLeftBottomLeftB.setBackgroundResource(R.color.colorGrey);
                     AutoLeftBottomLeft = "Grey";
                 }
@@ -151,7 +152,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                     AutoLeftBottomCenterB.setBackgroundResource(R.color.colorPurple);
                     AutoLeftBottomCenter = "Purple";
                 }
-                else { // (AutoLeftBottomLeft == "Purple") {
+                else {
                     AutoLeftBottomCenterB.setBackgroundResource(R.color.colorGrey);
                     AutoLeftBottomCenter = "Grey";
                 }
@@ -169,7 +170,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                     AutoLeftBottomRightB.setBackgroundResource(R.color.colorPurple);
                     AutoLeftBottomRight = "Purple";
                 }
-                else { // (AutoLeftBottomLeft == "Purple") {
+                else {
                     AutoLeftBottomRightB.setBackgroundResource(R.color.colorGrey);
                     AutoLeftBottomRight = "Grey";
                 }
@@ -188,7 +189,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                     AutoCoopBottomLeftB.setBackgroundResource(R.color.colorPurple);
                     AutoCoopBottomLeft = "Purple";
                 }
-                else { // (AutoCoopBottomLeft == "Purple") {
+                else {
                     AutoCoopBottomLeftB.setBackgroundResource(R.color.colorGrey);
                     AutoCoopBottomLeft = "Grey";
                 }
@@ -206,7 +207,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                     AutoCoopBottomCenterB.setBackgroundResource(R.color.colorPurple);
                     AutoCoopBottomCenter = "Purple";
                 }
-                else { // (AutoCoopBottomLeft == "Purple") {
+                else {
                     AutoCoopBottomCenterB.setBackgroundResource(R.color.colorGrey);
                     AutoCoopBottomCenter = "Grey";
                 }
@@ -224,7 +225,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                     AutoCoopBottomRightB.setBackgroundResource(R.color.colorPurple);
                     AutoCoopBottomRight = "Purple";
                 }
-                else { // (AutoCoopBottomLeft == "Purple") {
+                else {
                     AutoCoopBottomRightB.setBackgroundResource(R.color.colorGrey);
                     AutoCoopBottomRight = "Grey";
                 }
@@ -243,7 +244,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                     AutoRightBottomLeftB.setBackgroundResource(R.color.colorPurple);
                     AutoRightBottomLeft = "Purple";
                 }
-                else { // (AutoRightBottomLeft == "Purple") {
+                else {
                     AutoRightBottomLeftB.setBackgroundResource(R.color.colorGrey);
                     AutoRightBottomLeft = "Grey";
                 }
@@ -261,7 +262,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                     AutoRightBottomCenterB.setBackgroundResource(R.color.colorPurple);
                     AutoRightBottomCenter = "Purple";
                 }
-                else { // (AutoRightBottomLeft == "Purple") {
+                else {
                     AutoRightBottomCenterB.setBackgroundResource(R.color.colorGrey);
                     AutoRightBottomCenter = "Grey";
                 }
@@ -279,7 +280,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                     AutoRightBottomRightB.setBackgroundResource(R.color.colorPurple);
                     AutoRightBottomRight = "Purple";
                 }
-                else { // (AutoRightBottomLeft == "Purple") {
+                else {
                     AutoRightBottomRightB.setBackgroundResource(R.color.colorGrey);
                     AutoRightBottomRight = "Grey";
                 }
@@ -288,6 +289,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
 
         //This is the code for cone only spots
+        //*******************  YELLOW CONE NODES  ****************************************
         //Left Grid
         AutoLeftTopLeftB.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -461,6 +463,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
 
         //This is the code for cube only spots
+        //*******************  PURPLE CUBE NODES  ****************************************
         //Left Grid
         AutoLeftTopCenterB.setOnClickListener(new View.OnClickListener() {
             @Override

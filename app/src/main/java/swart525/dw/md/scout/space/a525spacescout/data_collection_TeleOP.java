@@ -258,6 +258,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
 
         //This is the code for either cone or cube spots
+        //*******************  HYBRID NODES  ****************************************
         //Left Grid
         TeleLeftBottomLeftB.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -425,6 +426,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
 
         //This is the code for cone only spots
+        //*******************  YELLOW CONE NODES  ****************************************
         //Left Grid
         TeleLeftTopLeftB.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -627,7 +629,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             }
         });
 
-        //Coop Grid
+        //*******************  PURPLE CUBE NODES  ****************************************
         TeleCoopTopCenterB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -676,7 +678,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             public void onClick(View view) {
                 if (TeleRightMiddleCenter == "Grey") {
                     TeleRightMiddleCenterB.setBackgroundResource(R.color.colorPurple);
-                    TeleRightMiddleCenter = "Purple";
+                    TeleRightMiddleCenter = "RED";
                 }
                 else {
                     TeleRightMiddleCenterB.setBackgroundResource(R.color.colorGrey);

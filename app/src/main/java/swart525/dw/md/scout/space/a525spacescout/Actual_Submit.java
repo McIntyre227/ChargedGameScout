@@ -28,67 +28,71 @@ public class Actual_Submit extends AppCompatActivity {
     //Compiles string for CSV file
     public String Final_String = Data_Collection_Page_1.Team_Num + "," +
             Data_Collection_Page_1.Match_Num + "," +
+            data_Collection_sandstorm.AutoAchievedMobility + "," +
             data_Collection_sandstorm.AutoAttempted + "," +
-            data_Collection_sandstorm.AutoAchivedMobility + "," +
             data_Collection_sandstorm.AutoDocked + "," +
             data_Collection_sandstorm.AutoEngaged + "," +
-            //Left Grid
+
+            //Autonomous
+            //Top Row
             data_Collection_sandstorm.AutoLeftTopLeft + "," +
             data_Collection_sandstorm.AutoLeftTopCenter + "," +
             data_Collection_sandstorm.AutoLeftTopRight + "," +
-            data_Collection_sandstorm.AutoLeftMiddleLeft + "," +
-            data_Collection_sandstorm.AutoLeftMiddleCenter + "," +
-            data_Collection_sandstorm.AutoLeftMiddleRight + "," +
-            data_Collection_sandstorm.AutoLeftBottomLeft + "," +
-            data_Collection_sandstorm.AutoLeftBottomCenter + "," +
-            data_Collection_sandstorm.AutoLeftBottomRight + "," +
-            //Coop Grid
             data_Collection_sandstorm.AutoCoopTopLeft + "," +
             data_Collection_sandstorm.AutoCoopTopCenter + "," +
             data_Collection_sandstorm.AutoCoopTopRight + "," +
-            data_Collection_sandstorm.AutoCoopMiddleLeft + "," +
-            data_Collection_sandstorm.AutoCoopMiddleCenter + "," +
-            data_Collection_sandstorm.AutoCoopMiddleRight + "," +
-            data_Collection_sandstorm.AutoCoopBottomLeft + "," +
-            data_Collection_sandstorm.AutoCoopBottomCenter + "," +
-            data_Collection_sandstorm.AutoCoopBottomRight + "," +
-            //Right Grid
             data_Collection_sandstorm.AutoRightTopLeft + "," +
             data_Collection_sandstorm.AutoRightTopCenter + "," +
             data_Collection_sandstorm.AutoRightTopRight + "," +
+            //Middle Row
+            data_Collection_sandstorm.AutoLeftMiddleLeft + "," +
+            data_Collection_sandstorm.AutoLeftMiddleCenter + "," +
+            data_Collection_sandstorm.AutoLeftMiddleRight + "," +
+            data_Collection_sandstorm.AutoCoopMiddleLeft + "," +
+            data_Collection_sandstorm.AutoCoopMiddleCenter + "," +
+            data_Collection_sandstorm.AutoCoopMiddleRight + "," +
             data_Collection_sandstorm.AutoRightMiddleLeft + "," +
             data_Collection_sandstorm.AutoRightMiddleCenter + "," +
             data_Collection_sandstorm.AutoRightMiddleRight + "," +
+            //Bottom Row
+            data_Collection_sandstorm.AutoLeftBottomLeft + "," +
+            data_Collection_sandstorm.AutoLeftBottomCenter + "," +
+            data_Collection_sandstorm.AutoLeftBottomRight + "," +
+            data_Collection_sandstorm.AutoCoopBottomLeft + "," +
+            data_Collection_sandstorm.AutoCoopBottomCenter + "," +
+            data_Collection_sandstorm.AutoCoopBottomRight + "," +
             data_Collection_sandstorm.AutoRightBottomLeft + "," +
             data_Collection_sandstorm.AutoRightBottomCenter + "," +
             data_Collection_sandstorm.AutoRightBottomRight + "," +
-            //Left Grid
+
+            //Teleop
+            //Top Row
             data_collection_TeleOP.TeleLeftTopLeft + "," +
             data_collection_TeleOP.TeleLeftTopCenter + "," +
             data_collection_TeleOP.TeleLeftTopRight + "," +
-            data_collection_TeleOP.TeleLeftMiddleLeft + "," +
-            data_collection_TeleOP.TeleLeftMiddleCenter + "," +
-            data_collection_TeleOP.TeleLeftMiddleRight + "," +
-            data_collection_TeleOP.TeleLeftBottomLeft + "," +
-            data_collection_TeleOP.TeleLeftBottomCenter + "," +
-            data_collection_TeleOP.TeleLeftBottomRight + "," +
-            //Coop Grid
             data_collection_TeleOP.TeleCoopTopLeft + "," +
             data_collection_TeleOP.TeleCoopTopCenter + "," +
             data_collection_TeleOP.TeleCoopTopRight + "," +
-            data_collection_TeleOP.TeleCoopMiddleLeft + "," +
-            data_collection_TeleOP.TeleCoopMiddleCenter + "," +
-            data_collection_TeleOP.TeleCoopMiddleRight + "," +
-            data_collection_TeleOP.TeleCoopBottomLeft + "," +
-            data_collection_TeleOP.TeleCoopBottomCenter + "," +
-            data_collection_TeleOP.TeleCoopBottomRight + "," +
-            //Right Grid
             data_collection_TeleOP.TeleRightTopLeft + "," +
             data_collection_TeleOP.TeleRightTopCenter + "," +
             data_collection_TeleOP.TeleRightTopRight + "," +
+            //Middle Row
+            data_collection_TeleOP.TeleLeftMiddleLeft + "," +
+            data_collection_TeleOP.TeleLeftMiddleCenter + "," +
+            data_collection_TeleOP.TeleLeftMiddleRight + "," +
+            data_collection_TeleOP.TeleCoopMiddleLeft + "," +
+            data_collection_TeleOP.TeleCoopMiddleCenter + "," +
+            data_collection_TeleOP.TeleCoopMiddleRight + "," +
             data_collection_TeleOP.TeleRightMiddleLeft + "," +
             data_collection_TeleOP.TeleRightMiddleCenter + "," +
             data_collection_TeleOP.TeleRightMiddleRight + "," +
+            //Bottom Row
+            data_collection_TeleOP.TeleLeftBottomLeft + "," +
+            data_collection_TeleOP.TeleLeftBottomCenter + "," +
+            data_collection_TeleOP.TeleLeftBottomRight + "," +
+            data_collection_TeleOP.TeleCoopBottomLeft + "," +
+            data_collection_TeleOP.TeleCoopBottomCenter + "," +
+            data_collection_TeleOP.TeleCoopBottomRight + "," +
             data_collection_TeleOP.TeleRightBottomLeft + "," +
             data_collection_TeleOP.TeleRightBottomCenter + "," +
             data_collection_TeleOP.TeleRightBottomRight + "," +

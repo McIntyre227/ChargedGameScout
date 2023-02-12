@@ -22,4 +22,5 @@
     <color name="colorYellow">#E6EC05</color>
     <color name="colorPurple">#9a02ff</color>
     <color name="colorGrey">#CCCCC8</color>
+    <color name="colorCoopGrid">#9C9C9A</color>
 </resources>
