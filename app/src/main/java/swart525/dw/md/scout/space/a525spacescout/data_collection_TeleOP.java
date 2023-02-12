@@ -678,7 +678,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
             public void onClick(View view) {
                 if (TeleRightMiddleCenter == "Grey") {
                     TeleRightMiddleCenterB.setBackgroundResource(R.color.colorPurple);
-                    TeleRightMiddleCenter = "RED";
+                    TeleRightMiddleCenter = "Purple";
                 }
                 else {
                     TeleRightMiddleCenterB.setBackgroundResource(R.color.colorGrey);
