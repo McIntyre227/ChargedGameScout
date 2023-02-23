@@ -15,6 +15,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
     public static String AutoDocked = "False";
     public static String AutoEngaged = "False";
     public static String AutoAttempted = "False";
+    public static String AutoNone = "False";
     //Left Grid
     public static String AutoLeftTopLeft = "Grey";
     public static String AutoLeftMiddleLeft = "Grey";
@@ -57,6 +58,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         final RadioButton AutoDockedRB = (RadioButton) findViewById(R.id.Auto_Docked_RB);
         final RadioButton AutoEngagedRB = (RadioButton) findViewById(R.id.Auto_Engaged_RB);
         final RadioButton AutoAttemptedRB = (RadioButton) findViewById(R.id.Auto_Attempted_RB);
+        final RadioButton AutoNoneRB = (RadioButton) findViewById(R.id.Auto_None_RB);
         //Defines all Buttons_B
              //Left Grid
         final Button AutoLeftTopLeftB = (Button) findViewById(R.id.Auto_LeftTopLeft_B);
@@ -109,6 +111,9 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 }
                 if (AutoAttemptedRB.isChecked()) {
                     AutoAttempted = "True";
+                }
+                if (AutoNoneRB.isChecked()) {
+                    AutoNone = "True";
                 }
 
                 Intent startintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
@@ -164,6 +169,7 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             public void onClick(View view) {
                 if (AutoLeftBottomRight == "Grey") {
                     AutoLeftBottomRightB.setBackgroundResource(R.color.colorYellow);
+
                     AutoLeftBottomRight = "Yellow";
                 }
                 else if (AutoLeftBottomRight == "Yellow") {
@@ -227,6 +233,8 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 }
                 else {
                     AutoCoopBottomRightB.setBackgroundResource(R.color.colorGrey);
+                    AutoCoopBottomRightB.setWidth(81);
+                    AutoCoopBottomRightB.setHeight(116);
                     AutoCoopBottomRight = "Grey";
                 }
             }

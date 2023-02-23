@@ -10,20 +10,105 @@
     tools:showIn="@layout/activity_data_collection__tele_op">
 
     <TextView
-        android:id="@+id/autonomous_TV3"
-        android:layout_width="167dp"
-        android:layout_height="116dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="@font/bolt_regular"
-        android:text="Scoring tables"
-        android:textColor="#111"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toTopOf="@+id/To_Teleop"
+        android:id="@+id/textView7"
+        android:layout_width="259dp"
+        android:layout_height="382dp"
+        android:background="#575757"
+        android:gravity="bottom|center_horizontal"
+        android:text="Coop Grid"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintVertical_bias="0.183" />
+
+    <TextView
+        android:id="@+id/autonomous_TV6"
+        android:layout_width="282dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/colorGrey"
+        android:fontFamily="@font/bolt"
+        android:gravity="center"
+        android:text="Drivers Station Side"
+        android:textAllCaps="false"
+        android:textColor="#111"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/To_Teleop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <TextView
+        android:id="@+id/autonomous_TV5"
+        android:layout_width="300dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="552dp"
+        android:background="@color/colorGrey"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Charging Station Side"
+        android:textColor="#111"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/To_Teleop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="497dp"
+        android:layout_height="3dp"
+        android:background="@color/colorLabel"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="259dp"
+        android:layout_height="382dp"
+        android:background="@color/colorLabel"
+        android:gravity="bottom|center_horizontal"
+        android:text="Outer Grid"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="259dp"
+        android:layout_height="382dp"
+        android:background="@color/colorLabel"
+        android:gravity="bottom|center_horizontal"
+        android:text="Outer Grid"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
 
     <Button
         android:id="@+id/Tele_CoopTopLeft_B"
@@ -389,8 +474,9 @@
         android:id="@+id/To_Submision_B"
         android:layout_width="525dp"
         android:layout_height="125dp"
-        android:text="To Submition"
-        android:textSize="30sp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="To Submision"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -409,10 +495,9 @@
         android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.013" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
@@ -447,133 +532,143 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="1dp" />
 
-    <RadioButton
-        android:id="@+id/Tele_Engaged_RB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Engaged"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.629" />
-
-    <CheckBox
-        android:id="@+id/Tele_Tipped_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Robot Tipped"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.846"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.695" />
-
-    <CheckBox
-        android:id="@+id/Tele_Defense_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Defense"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.693"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631" />
-
     <View
         android:id="@+id/divider3"
-        android:layout_width="327dp"
-        android:layout_height="273dp"
+        android:layout_width="314dp"
+        android:layout_height="314dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintHorizontal_bias="0.866"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.712" />
+        app:layout_constraintVertical_bias="0.791" />
 
     <CheckBox
         android:id="@+id/Tele_RobotStall_CB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Robot Stalled"
-        android:textSize="45sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintHorizontal_bias="0.833"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759" />
-
-    <RadioButton
-        android:id="@+id/Tele_Docked_RB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Docked"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.129"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.568" />
-
-    <RadioButton
-        android:id="@+id/Tele_Attempted_RB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Attempted"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.689" />
-
-    <RadioButton
-        android:id="@+id/Tele_Parked_RB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Parked"
-        android:textSize="45sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.757" />
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="260dp"
-        android:layout_height="275dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.714" />
+        app:layout_constraintVertical_bias="0.769" />
 
     <CheckBox
         android:id="@+id/Tele_Fouls_CB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fouls"
-        android:textSize="45sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintHorizontal_bias="0.658"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.568" />
+        app:layout_constraintVertical_bias="0.637" />
+
+    <CheckBox
+        android:id="@+id/Tele_Tipped_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Robot Tipped"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.725" />
+
+    <CheckBox
+        android:id="@+id/Tele_Defense_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Defense"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
+
+    <RadioGroup
+        android:layout_width="311dp"
+        android:layout_height="309dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789">
+
+        <RadioButton
+            android:id="@+id/Tele_Docked_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Docked"
+            android:textSize="40sp" />
+
+        <RadioButton
+            android:id="@+id/Tele_Engaged_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engaged"
+            android:textSize="40sp" />
+
+        <RadioButton
+            android:id="@+id/Tele_Attempted_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Attempted"
+            android:textSize="40sp" />
+
+        <RadioButton
+            android:id="@+id/Tele_Parked_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parked"
+            android:textSize="40sp" />
+
+        <RadioButton
+            android:id="@+id/Tele_None_RB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Attempt"
+            android:textSize="40sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/teleOp_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bolt_regular"
+        android:gravity="center"
+        android:text="End Game"
+        android:textColor="#000"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="314dp"
+        android:layout_height="314dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789" />
 
 </android.support.constraint.ConstraintLayout>

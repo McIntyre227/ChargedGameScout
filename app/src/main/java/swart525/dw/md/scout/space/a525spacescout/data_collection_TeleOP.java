@@ -30,6 +30,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
     public static String TeleEngaged = "False";
     public static String TeleParked = "False";
     public static String TeleAttempted = "False";
+    public static String TeleNone = "False";
     //Left Grid
     public static String TeleLeftTopLeft = "Grey";
     public static String TeleLeftMiddleLeft = "Grey";
@@ -77,6 +78,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final RadioButton TeleEngagedRB = (RadioButton) findViewById(R.id.Tele_Engaged_RB);
         final RadioButton TeleAttemptedRB = (RadioButton) findViewById(R.id.Tele_Attempted_RB);
         final RadioButton TeleParkedRB = (RadioButton) findViewById(R.id.Tele_Parked_RB);
+        final RadioButton TeleNoneRB = (RadioButton) findViewById(R.id.Tele_None_RB);
         //Defines all Buttons_B
         //Left Grid
         final Button TeleLeftTopLeftB = (Button) findViewById(R.id.Tele_LeftTopLeft_B);
@@ -222,19 +224,15 @@ public class data_collection_TeleOP extends AppCompatActivity {
                 if (TeleTippedCB.isChecked()) {
                     TeleTipped = "True";
                 }
-
                 if (TeleDefenseCB.isChecked()) {
                     TeleDefense = "True";
                 }
-
                 if (TeleFoulsCB.isChecked()) {
                     TeleFouls = "True";
                 }
-
                 if (TeleRobotStallCB.isChecked()) {
                     TeleRobotStalled = "True";
                 }
-
                 if (TeleDockedRB.isChecked()) {
                     TeleDocked = "True";
                 }
@@ -246,6 +244,9 @@ public class data_collection_TeleOP extends AppCompatActivity {
                 }
                 if (TeleParkedRB.isChecked()) {
                     TeleParked = "True";
+                }
+                if (TeleNoneRB.isChecked()) {
+                    TeleNone = "True";
                 }
 
                 Intent startintent = new Intent(getApplicationContext(), Save_Page.class);
